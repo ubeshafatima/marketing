@@ -67,14 +67,36 @@
          <div class="subbox">
             <div class="heading3"><h4>Send us a message</h4></div>
             
-            <form>
-                <input type="name" placeholder="First Name"  size="20" height="20">
+            <!-- <form>
+                <pre>                <input type="name" placeholder="First Name"  size="20" height="20">
                 <input type="name" placeholder="Last Name" required>
                 <input type="email" placeholder="Email adress" required>
                 <input type="subject" placeholder="Subject" required>
-                <input type="message" placeholder="Your Message" required>
-            </form>
-         </div>
+            </pre>
+            <input type="message" placeholder="Your Message" required>
+            </form> -->
+
+            <div class="form-container">
+                <form action="/submit_form" method="post">
+                    <!-- <h2>Contact Us</h2>
+                     <label for="first-name">First Name</label>  -->
+                    <input type="text"  placeholder="first-name" name="first-name" required>
+<!--         
+                    <label for="last-name">Last Name</label> -->
+                    <input type="text" placeholder="last-name" name="last-name" required>
+        
+                    <!-- <label for="email">Email</label> -->
+                    <input type="email" placeholder="email" name="email" required>
+        
+                    <!-- <label for="subject">Subject</label> -->
+                    <input type="text" placeholder="subject" name="subject" required>
+        
+                    <!-- <label for="message">Message</label> -->
+                    <textarea placeholder="message" name="message" rows="4" required></textarea>
+        
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
         </div>
 
         <div class="map">
@@ -142,6 +164,9 @@
 <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit cumque error, delectus veritatis impedit eius, quae nisi ut repellat ullam similique architecto, voluptates distinctio ipsum. Nulla in beatae dolores nemo.
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio consectetur temporibus exercitationem aperiam cum odio neque numquam vero ut facere! Laborum tempore hic repellat voluptate reiciendis sed quam sit facilis!
 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam asperiores quisquam molestias exercitationem sed qui itaque hic voluptate et? Recusandae hic cum similique doloremque voluptas. Hic perferendis veniam explicabo excepturi. -->
+
+
+
 
 </body>
 </html>
